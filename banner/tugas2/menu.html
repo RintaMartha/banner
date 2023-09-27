@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+	<title>SLIDER|Dropdown 31</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <center>
+        <h4>Membuat Menu Dropdown dan Slider Dengan CSS <br/> By-rinta martha</h4>
+    </center>
+        <div class=malasngoding-slider>
+            <div class=isi-slider>
+                <img src="img/5.png" alt="Gambar 1">
+                <img src="img/1.png" alt="Gambar 2">
+                <img src="img/3.png" alt="Gambar 3">
+                <img src="img/4.png" alt="Gambar 4">
+                <img src="img/2.png" alt="Gambar 5">
+            </div>
+        </div>
+    
+        <style type="text/css">
+        html,body{
+            padding: 0;
+            margin:0;
+            font-family: sans-serif;
+        }
+    
+        .menu-malasngoding{
+            background-color: #3141ff;
+        }
+    
+        .menu-malasngoding ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+    
+        .menu-malasngoding > ul > li {
+            float: left;
+        }
+    
+        
+        .menu-malasngoding li a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+    
+        .menu-malasngoding li a:hover{
+            background-color: #2525ff;
+        }
+    
+        li.dropdown {
+            display: inline-block;
+        }
+    
+        .dropdown:hover .isi-dropdown {
+            display: block;
+        }
+    
+        .isi-dropdown a:hover {
+            color: #fff !important;
+        }
+    
+        .isi-dropdown {
+            position: absolute;
+            display: none;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            background-color: #f9f9f9;
+        }
+    
+        .isi-dropdown a {
+            color: #3c3c3c !important;
+        }
+    
+        .isi-dropdown a:hover {
+            color: #232323 !important;
+            background: #f3f3f3 !important;
+        }
+    </style>
+    
+    <marquee bgcolor="yellow" width="1370">Welcome to website SMK N 9 Semarang page</marquee><br>
+    <header class="header">
+        <div class="menu-malasngoding">
+    
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li class="dropdown"><a href="#">PROFIL</a>
+                    <ul class="isi-dropdown">
+                        <li><a href="#">SEJARAH</a></li>
+                        <li><a href="#">VISI DAN MISI</a></li>
+                        <li><a href="#">TUGAS DAN FUNGSI</a></li>
+                        <li><a href="#">STRUKTUR ORGANISASI</a></li>
+                        <li><a href="#">UNIT KERJA</a></li>
+                        <li><a href="#">PROFIL PEJABAT</a></li>
+                    </ul>
+                <li class="dropdown"><a href="#">LAYANAN</a>
+                    <ul class="isi-dropdown">
+                        <li><a href="#">INFORMASI</a></li>
+                        <li><a href="#">LAYANAN PUBLIK</a></li>
+                        <li><a href="#">LAYANAN PENGAJUAN</a></li>
+                        <li><a href="#">LAYANAN KEBERATAN</a></li>
+                        <li><a href="#">LAYANAN ADUAN</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CABANG DINAS</a></li>
+                <li class="dropdown"><a href="#">PROFIL</a>
+                    <ul class="isi-dropdown">
+                        <li><a href="#">CABDIN 1</a></li>
+                        <li><a href="#">CABDIN 2</a></li>
+                        <li><a href="#">CABDIN 3</a></li>
+                        <li><a href="#">CABDIN 4</a></li>
+                    </ul>
+                <li><a href="#">KONTAK</a></li>
+            </ul>
+    
+        </div>
+    </header>
+    
+    <br/>
+    
+</body>
+</html>
